@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(to right, #132C6A 10%, #350A56 100%);
+    font-family: Arial, sans-serif;
+    color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Hace que el body ocupe al menos el 100% del alto de la ventana */
+}
+.header{
+    align-items: center;
+    display: grid;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.img_capturas{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* margin: 30px; */
+    /* width: 5rem; */
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.color_rojo{
+    color: red;
+    float: left;
+    font-weight: bold;
+    margin-right: 7px;
+}
+#titulo{
+    text-align: center;
+    width: auto;
+    align-items: center;
+}
+.centrar{
+    justify-content: center;
+}
+.content {
+    flex: 1; /* Hace que el contenido ocupe el espacio restante */
+    padding: 20px;
+}
+.navbar {
+    background-color: transparent;
+    border: 2px solid #87CEEB; /* Borde del navbar */
+    overflow: hidden;
+    padding: 10px; /* Ajusta el padding según sea necesario */
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    padding: 14px 20px;
+    border: 2px solid #87CEEB; /* Borde de los ítems */
+    margin: 0 5px; /* Ajusta el margen según sea necesario */
+}
+
+.nav-item a {
+    color: #87CEEB;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+     }
+
+.nav-item a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-item:hover {
+    background-color: #575757;
+     transform: scale(1.1);
+}
+.container{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.descargar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cambiarColor{
+    animation: cambioColor 2s infinite;
+    align-items: center;
+    text-decoration: none;
+}
+footer {
+    /* position: absolute; */
+    background-color: black; /* Fondo oscuro */
+    color: white; /* Letras blancas */
+    text-align: center; /* Texto centrado */
+    padding: 20px 0; /* Espaciado interno */
+    width: 100%; /* Ocupa todo el ancho de la página */
+     /*position: fixed; Fija el footer en la parte inferior */
+    bottom: 0; /* Lo coloca en la parte inferior */
+    left: 0; /* Asegura que esté alineado a la izquierda */
+}
+footer-2 {
+    position: absolute;/*  */
+    background-color: black; /* Fondo oscuro */
+    color: white; /* Letras blancas */
+    text-align: center; /* Texto centrado */
+    padding: 20px 0; /* Espaciado interno */
+    width: 100%; /* Ocupa todo el ancho de la página */
+     /*position: fixed; Fija el footer en la parte inferior */
+    bottom: 0; /* Lo coloca en la parte inferior */
+    left: 0; /* Asegura que esté alineado a la izquierda */
+}
+
+/* Estilos para el párrafo dentro del footer */
+footer p {
+    margin: 0; /* Elimina el margen por defecto del párrafo */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+/* Definimos la animación */
+@keyframes cambioColor {
+    0% {
+        color: red;
+    }
+    100% {
+        color: #87CEEB; /* Celeste claro */
+    }
+}
