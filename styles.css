@@ -166,13 +166,12 @@ footer p {
         /* display: flex;
         flex-direction: column; */
         width: 100%;
-        background-color: trasparent;
         justify-content: center;
         text-align: center;
         overflow: auto;
         /* Limpia el float */
         margin: 20px 0;
-        background-color: red;
+        background-color: transparent;
     }
 
     .captura {
@@ -185,9 +184,27 @@ footer p {
     }
 }
 
-@media (max-width: 800px) {
-    .captura {
+@media (min-width: 700px) {
+    .imagen_texto {
+        /* display: flex;
+        flex-direction: column; */
         width: 100%;
+        background-color: trasparent;
+        justify-content: center;
+        text-align: center;
+        overflow: auto;
+        /* Limpia el float */
+        margin: 20px 0;
+        background-color: transparent;
+        
+    }
+
+    .captura {
+        max-width: 100%;
+        /* Máximo ancho del contenedor */
+        height: auto;
+        /* Altura automática */
+    
         
     }
 }
